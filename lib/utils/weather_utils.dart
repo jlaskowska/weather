@@ -17,4 +17,6 @@ class WeatherUtils {
   };
 
   static IconData iconForWeatherState(WeatherState state) => _mapWeatherStateIcon[state];
+
+  static int celsiusToFahrenheit(int celsius) => celsius != null ? ((celsius * (9 / 5)) + 32).toInt() : null;
 }
