@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:intl/intl.dart';
 import 'package:weather/enums/weather_state.dart';
 import 'package:weather_icons/weather_icons.dart';
 
@@ -19,4 +20,9 @@ class WeatherUtils {
   static IconData iconForWeatherState(WeatherState state) => _mapWeatherStateIcon[state];
 
   static int celsiusToFahrenheit(int celsius) => celsius != null ? ((celsius * (9 / 5)) + 32).toInt() : null;
+
+  static String formatDate(DateTime date) {
+    DateFormat formatter = DateFormat('dd/MM');
+    return formatter.format(date);
+  }
 }

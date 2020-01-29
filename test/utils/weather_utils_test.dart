@@ -30,4 +30,11 @@ void main() {
 
     expect(fahrenheit, 100);
   });
+
+  test('formatDate', () {
+    final date = DateTime.parse('19700101');
+    final formattedDate = WeatherUtils.formatDate(date);
+
+    expect(formattedDate, '01/01');
+  });
 }
