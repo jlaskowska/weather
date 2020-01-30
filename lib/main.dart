@@ -12,11 +12,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<AppState>(
       create: (context) => AppState(),
+      lazy: false,
       child: MaterialApp(
         theme: ThemeData(
           primaryColor: AppColors.darkBlue,
           accentColor: AppColors.shadowColor,
-          fontFamily: GoogleFonts.mavenPro().fontFamily,
+          fontFamily: GoogleFonts.oswald().fontFamily,
+          scaffoldBackgroundColor: AppColors.darkBlue,
+          indicatorColor: Colors.white,
         ),
         home: Scaffold(
           body: HomeScreen(),
