@@ -16,6 +16,7 @@ dependencies:
   intl: ^0.16.1
   geolocator: ^5.2.1
   shared_preferences: ^0.5.6+1
+  flutter_launcher_icons: ^0.7.4
 
 dev_dependencies:
   flutter_test:
@@ -23,3 +24,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+flutter_icons:
+  android: "ic_launcher" 
+  ios: true
+  image_path: "assets_dev/app_icon.png"
