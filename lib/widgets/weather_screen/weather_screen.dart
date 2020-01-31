@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:weather/configs/app_colors.dart';
 import 'package:weather/states/app_state.dart';
 import 'package:weather/widgets/weather_screen/weather_screen_content.dart';
 
@@ -22,12 +23,14 @@ class _WeatherScreenState extends State<WeatherScreen> {
           return WeatherScreenContent(snapshot.data);
         } else if (snapshot.hasError || (snapshot.connectionState == ConnectionState.done && snapshot.data == null)) {
           return AlertDialog(
+            backgroundColor: AppColors.lightRose,
             title: Text('Ooops'),
             content: Text(
                 'Something went wrong. Make sure you enabled location services and have an active internet connection.'),
             actions: <Widget>[
               FlatButton(
-                child: Text('Try Again'),
+                textColor: Theme.of(context).primaryColor,
+                child: Text('Try Again'.toUpperCase()),
                 onPressed: () {
                   // TODO better way to trigger rebuild?
                   setState(() {});

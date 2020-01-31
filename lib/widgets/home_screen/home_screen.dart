@@ -15,8 +15,8 @@ class _HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
 
   List<NavigationBarItemModel> navigationItems = [
-    NavigationBarItemModel(icon: Icon(Icons.calendar_today), title: 'Forecast'),
-    NavigationBarItemModel(icon: Icon(Icons.settings), title: 'Settings'),
+    NavigationBarItemModel(icon: Icon(Icons.calendar_today), title: 'Forecast'.toUpperCase()),
+    NavigationBarItemModel(icon: Icon(Icons.settings), title: 'Settings'.toUpperCase()),
   ];
 
   @override

@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       create: (context) => AppState(),
       lazy: false,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primaryColor: AppColors.darkBlue,
           accentColor: AppColors.shadowColor,
