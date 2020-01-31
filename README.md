@@ -2,15 +2,29 @@
 
 A simple weather app made with Flutter.
 
-## Getting Started
+The app uses the device's location to get the current weather (and five day forecast). If an error occurs (no internet, location permission not granted), then a popup is displayed.
 
-This project is a starting point for a Flutter application.
+Design inspired by [Weather App Concept](https://dribbble.com/shots/7180398-Weather-App-Concept) by [Eddy Gann](https://dribbble.com/Ed117).
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+|                             |                             |                             |
+| ----------------------------| --------------------------- | --------------------------- |
+| ![](docs/screenshots01.png) | ![](docs/screenshots02.png) | ![](docs/screenshots03.png) |
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Class Diagrams
+
+|                                   |                             |
+| ----------------------------------| --------------------------- |
+| ![](docs/uml_weather_service.png) | ![](docs/uml_app_state.png) |
+
+## Technical Info
+
+- The app consists of one main screen `HomeScreen` containing a bottom navigation bar.
+- This navigation bar shows either `WeatherScreen` or `SettingsScreen`.
+    - On `WeatherScreen` displays the current weather forecast for the device's location.
+    - On `SettingsScreen`, the user can choose between Celsius or Fahrenheit.
+- `Provider` is used as the project's state management solution.
+- `WeatherService` uses [MetaWeather Api](https://www.metaweather.com/api/).
+
+
