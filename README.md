@@ -8,9 +8,9 @@ Design inspired by [Weather App Concept](https://dribbble.com/shots/7180398-Weat
 
 ## Screenshots
 
-|                             |                             |                             |
-| ----------------------------| --------------------------- | --------------------------- |
-| ![](docs/screenshots01.png) | ![](docs/screenshots02.png) | ![](docs/screenshots03.png) |
+|                             |                             |                             |                     |
+| ----------------------------| --------------------------- | --------------------------- | ------------------- |
+| ![](docs/screenshots01.png) | ![](docs/screenshots02.png) | ![](docs/screenshots03.png) | ![](docs/gif01.gif) |
 
 ## Class Diagrams
 
