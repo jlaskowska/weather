@@ -8,15 +8,15 @@ Design inspired by [Weather App Concept](https://dribbble.com/shots/7180398-Weat
 
 ## Screenshots
 
-|                             |                             |                             |                     |
-| ----------------------------| --------------------------- | --------------------------- | ------------------- |
-| ![](docs/screenshots01.png) | ![](docs/screenshots02.png) | ![](docs/screenshots03.png) | ![](docs/gif01.gif) |
+|                       |                              |                              |                              |
+|-----------------------|------------------------------|------------------------------|------------------------------|
+| ![](docs/gifs/01.gif) | ![](docs/screenshots/01.png) | ![](docs/screenshots/02.png) | ![](docs/screenshots/03.png) |
 
 ## Class Diagrams
 
-|                                   |                             |
-| ----------------------------------| --------------------------- |
-| ![](docs/uml_weather_service.png) | ![](docs/uml_app_state.png) |
+|                                            |                                      |
+|--------------------------------------------|--------------------------------------|
+| ![](docs/diagrams/uml_weather_service.png) | ![](docs/diagrams/uml_app_state.png) |
 
 ## Technical Info
 
